@@ -10,7 +10,13 @@ To find: when is the latest time  they all form friendship
 
 Date: April 30,2023
 Author: Rajashree Dahal
-Problem: Algorithms course by Princeton University Week 1 Quiz problem 1*/
+Problem: Algorithms course by Princeton University Week 1 Quiz problem 1
+Solution: Efficiently implemented without using Find method. This implementation replaces the values with the latest time, 
+which represents the root of the connected component. 
+Therefore, we can find the earliest time at which all members are connected by finding the minimum value in the order array, 
+which is the root of the connected component containing all members.
+*/
+
 
 
 import java.io.File;
