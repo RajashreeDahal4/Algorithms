@@ -21,7 +21,7 @@ def longest_chain(sequence):
         if (i+1)<len(sequence) and sequence[i]==sequence[i+1]:
             counter=counter+1
             each_len=each_len+1
-        elif max_len<=each_len:
+        elif max_len<each_len:
             max_len=each_len
             end_position=i+1
             start_position=end_position-counter
@@ -33,10 +33,9 @@ def longest_chain(sequence):
             counter=0
             continue
     print("Output:")
-    print(sequence)
     print(max_len)
     print(start_position)
     print(end_position)
-
-longest_chain('TTTAAAGGGGGGGGGG')
+longest_chain('TTTAAGG')
             
+
