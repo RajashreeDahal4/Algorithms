@@ -15,7 +15,7 @@ Output:
 9
 ''' 
 import time
-def missing_number_jumping(n,numbers):
+def missing_number(n,numbers):
     start_time=time.time()
     expected_sum=int(n*(n+1)/2)
     given_numbers_sum=sum(numbers)
@@ -23,7 +23,10 @@ def missing_number_jumping(n,numbers):
     print("The time taken for execution is",time.time()-start_time)
     return missing_number
 
-numbers=[i for i in range(1,1000000+1)]
-numbers.remove(500000)
-missing_number=missing_number_jumping(1000000,numbers)
+# Input
+print("Please enter an integer value of n:")
+n = int(input())
+print("Please enter the values from 1 to n with one number missing.All numbers should be separated by single space")
+numbers = list(map(int, input().split()))
+missing_number=missing_number(n,numbers)
 print("The missing Number is",missing_number)
