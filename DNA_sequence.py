@@ -8,7 +8,7 @@ The program should take its input from a single line and output the length of
 the longest single character repetition and the start position and end position
 of this repetition.
 Note:: In case of more than two longest chain of same letter in the sequence, the program
-considers any longest chain of sequence when moving from left to right.
+considers the first longest chain of sequence when moving from left to right.
 
 '''
 
