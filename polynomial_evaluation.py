@@ -1,10 +1,13 @@
 """
 Date: October 4, 2023
 Name: Rajashree Dahal
+
+####ask sameer dai
 Problem: 3: Design a linear-time recursive algorithm, in pseudo-code to evaluate the  polynomial anxn+an-1xn-1+...a1x+a0.  
 Note that, ais are given, x is the variable. (20pts)
 """
 import math
+
 def polynomial_evaluation(x,a_values,start,end,dummy):
     '''
     a_values: contain list of a values from 0 to n
@@ -22,3 +25,10 @@ def polynomial_evaluation(x,a_values,start,end,dummy):
 a_values=[1,1,1,1,1,1,2]
 result=polynomial_evaluation(6,a_values,0,2,[i for i in range(len(a_values))])
 print(result)
+
+
+def polynomial_evaluation_v2(x,degree):
+    if degree==0:
+        return x[0]
+    else:
+        return x[degree]
