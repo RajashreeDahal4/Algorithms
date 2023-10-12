@@ -1,0 +1,6 @@
+-- guess number
+-- find power  a to n
+-- find sqrt
+-- find fixed point of sorted array
+-- find lowest/highest point in concave array | find peak element
+-- target sum2  in sorted array
