@@ -6,5 +6,5 @@ divide and conquer:
     -- tower of hanoi, nth step problem
     -- integer multiplication
     -- find max and min of array
-    -- dind dominating element
+    -- find dominating element
     
