@@ -1,0 +1,10 @@
+divide and conquer:
+    -- merge k sorted list
+    -- find median of two sorted array
+    -- count inversion
+    -- maximum subarray
+    -- tower of hanoi, nth step problem
+    -- integer multiplication
+    -- find max and min of array
+    -- dind dominating element
+    
