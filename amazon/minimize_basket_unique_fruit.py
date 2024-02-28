@@ -32,3 +32,28 @@ def basket(liss):
     return results
 result=basket(liss)  
 print("The result is",result)
+
+
+
+from collections import Counter
+
+
+def optimized_basket(liss):
+    dicts=Counter(liss)
+    num_lists=max(dicts.values())
+    dicts={i:[] for i in range(num_lists)}
+    count=0
+    for each_element in liss:
+        if each_element in dicts[count]:
+            while each_element in dicts[count]:
+                count=count+1
+                if each_element not in dicts[count]:
+                    dicts[count].append(each_element)
+                    break 
+        else:
+            dicts[count].append(each_element)
+        count=0
+    return dicts.values()
+        
+result=basket(liss)
+print(result)
